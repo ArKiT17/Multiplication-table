@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Тренажер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=PT+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Таблиця множення</h1>
+<hr>
+<div class="exercise">
+  <div class="numbers">
+    <input type="checkbox" id="1" name="1">
+    <label class="green" for="1">1</label>
+
+    <input type="checkbox" id="2" name="2">
+    <label class="green" for="2">2</label>
+
+    <input type="checkbox" id="3" name="3">
+    <label class="green" for="3">3</label>
+
+    <input type="checkbox" id="4" name="4">
+    <label class="orange" for="4">4</label>
+
+    <input type="checkbox" id="5" name="5">
+    <label class="orange" for="5">5</label>
+
+    <input type="checkbox" id="6" name="6">
+    <label class="orange" for="6">6</label>
+
+    <input type="checkbox" id="7" name="7">
+    <label class="red" for="7">7</label>
+
+    <input type="checkbox" id="8" name="8">
+    <label class="red" for="8">8</label>
+
+    <input type="checkbox" id="9" name="9">
+    <label class="red" for="9">9</label>
+  </div>
+  <div class="results">
+    <p class="result">Підказки: <span id="hintsCount">0</span></p>
+    <p class="result">Правильні відповіді: <span id="correctCount">0</span></p>
+    <p class="result">Неправильні відповіді: <span id="incorrectCount">0</span></p>
+  </div>
+  <div class="task">
+    <p><span id="firstNumber">1</span>*<span id="secondNumber">1</span>=</p>
+    <input type="number" id="twoDigitInput" name="twoDigitInput" min="0" max="99">
+  </div>
+  <div class="buttons">
+    <button class="btn hint" onclick="getAnswer()">Підказка</button>
+    <button class="btn answer" onclick="checkAnswer()">Відповісти</button>
+  </div>
+</div>
+<hr>
+</body>
+</html>
