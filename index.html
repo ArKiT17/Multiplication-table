@@ -11,43 +11,43 @@
 <body>
 <h1>Таблиця множення</h1>
 <hr>
-<div class="exercise">
+<div class="exercise" id="exercise">
   <div class="numbers">
-    <input type="checkbox" id="1" name="1">
+    <input type="checkbox" onchange="availableNumbers(1)" id="1" name="1" checked="checked">
     <label class="green" for="1">1</label>
 
-    <input type="checkbox" id="2" name="2">
+    <input type="checkbox" onchange="availableNumbers(2)" id="2" name="2" checked="checked">
     <label class="green" for="2">2</label>
 
-    <input type="checkbox" id="3" name="3">
+    <input type="checkbox" onchange="availableNumbers(3)" id="3" name="3" checked="checked">
     <label class="green" for="3">3</label>
 
-    <input type="checkbox" id="4" name="4">
+    <input type="checkbox" onchange="availableNumbers(4)" id="4" name="4" checked="checked">
     <label class="orange" for="4">4</label>
 
-    <input type="checkbox" id="5" name="5">
+    <input type="checkbox" onchange="availableNumbers(5)" id="5" name="5" checked="checked">
     <label class="orange" for="5">5</label>
 
-    <input type="checkbox" id="6" name="6">
+    <input type="checkbox" onchange="availableNumbers(6)" id="6" name="6" checked="checked">
     <label class="orange" for="6">6</label>
 
-    <input type="checkbox" id="7" name="7">
+    <input type="checkbox" onchange="availableNumbers(7)" id="7" name="7" checked="checked">
     <label class="red" for="7">7</label>
 
-    <input type="checkbox" id="8" name="8">
+    <input type="checkbox" onchange="availableNumbers(8)" id="8" name="8" checked="checked">
     <label class="red" for="8">8</label>
 
-    <input type="checkbox" id="9" name="9">
+    <input type="checkbox" onchange="availableNumbers(9)" id="9" name="9" checked="checked">
     <label class="red" for="9">9</label>
   </div>
   <div class="results">
-    <p class="result">Підказки: <span id="hintsCount">0</span></p>
-    <p class="result">Правильні відповіді: <span id="correctCount">0</span></p>
-    <p class="result">Неправильні відповіді: <span id="incorrectCount">0</span></p>
+    <p class="result">Підказок використано: <span id="hintsCount">0</span></p>
+    <p class="result">Правильно: <span id="correctCount">0</span></p>
+    <p class="result">Неправильно: <span id="incorrectCount">0</span></p>
   </div>
   <div class="task">
     <p><span id="firstNumber">1</span>*<span id="secondNumber">1</span>=</p>
-    <input type="number" id="twoDigitInput" name="twoDigitInput" min="0" max="99">
+    <input type="number" id="answer" name="answer" min="0" max="99">
   </div>
   <div class="buttons">
     <button class="btn hint" onclick="getAnswer()">Підказка</button>
@@ -55,5 +55,6 @@
   </div>
 </div>
 <hr>
+<script src="script.js"></script>
 </body>
 </html>

@@ -71,6 +71,7 @@ hr {
     padding: 20px 0;
     width: 60%;
     height: 70%;
+    transition: background-color 0.5s;
 }
 
 .exercise > div {
@@ -129,4 +130,12 @@ hr {
 
 .answer {
     background-color: #0ac900;
+}
+
+.correct-answer {
+    background-color: #6fff68;
+}
+
+.wrong-answer {
+    background-color: #ff5047;
 }
